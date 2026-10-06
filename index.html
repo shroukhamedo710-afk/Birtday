@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيد ميلاد سعيد ❤️</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffdae9; /* خلفية بينك */
+      background-image: radial-gradient(#ff8da1 15%, transparent 16%), radial-gradient(#ff8da1 15%, transparent 16%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px 25px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(255, 77, 109, 0.25);
+      text-align: center;
+      max-width: 440px;
+      width: 100%;
+      border: 2px solid #ffb3c6;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heart-icon {
+      font-size: 45px;
+      color: #ff4d6d;
+      margin-bottom: 10px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    h2 {
+      color: #c9184a;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #ff8da1;
+      border-radius: 12px;
+      outline: none;
+      text-align: center;
+      font-size: 18px;
+      color: #800f2f;
+      transition: 0.3s;
+    }
+
+    input[type="password"]:focus {
+      border-color: #ff4d6d;
+      box-shadow: 0 0 10px rgba(255, 77, 109, 0.3);
+    }
+
+    button {
+      background: linear-gradient(45deg, #ff4d6d, #ff758f);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+    }
+
+    .error-msg {
+      color: #d00000;
+      margin-top: 10px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .message-screen {
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- تصميم التورتة الشمع المتحرك --- */
+    .cake-container {
+      position: relative;
+      width: 160px;
+      height: 120px;
+      margin: 15px auto 25px auto;
+    }
+
+    .plate {
+      width: 170px;
+      height: 12px;
+      background: #e0e0e0;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      left: -5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .layer {
+      position: absolute;
+      width: 140px;
+      border-radius: 10px 10px 0 0;
+      left: 10px;
+    }
+
+    .layer-bottom {
+      height: 45px;
+      bottom: 12px;
+      background: #ff758f;
+    }
+
+    .layer-middle {
+      height: 35px;
+      bottom: 57px;
+      background: #ffb3c6;
+    }
+
+    .layer-top {
+      height: 25px;
+      bottom: 92px;
+      background: #fff0f5;
+    }
+
+    .icing {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: #ffffff;
+      border-radius: 10px 10px 5px 5px;
+    }
+
+    .candle {
+      position: absolute;
+      width: 10px;
+      height: 30px;
+      background: repeating-linear-gradient(45deg, #ff4d6d, #ff4d6d 5px, #ffffff 5px, #ffffff 10px);
+      bottom: 117px;
+      left: 75px;
+      border-radius: 3px 3px 0 0;
+    }
+
+    .flame {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 18px;
+      background: #ff9e00;
+      border-radius: 50% 50% 20% 20%;
+      box-shadow: 0 0 10px #ff9e00, 0 0 20px #ff4800;
+      animation: flicker 0.6s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { transform: translateX(-50%) scale(1) rotate(-2deg); opacity: 0.9; }
+      100% { transform: translateX(-50%) scale(1.15) rotate(2deg); opacity: 1; }
+    }
+
+    .greeting-text {
+      color: #800f2f;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- شاشة الباسورد -->
+    <div id="loginScreen">
+      <div class="heart-icon">❤️</div>
+      <h2>أدخلي كلمة السر لفتح الهدية ✨</h2>
+      <div class="input-group">
+        <input type="password" id="passwordInput" placeholder="اكتبي الباسورد هنا...">
+      </div>
+      <button onclick="checkPassword()">فتح ❤️</button>
+      <p id="errorMsg" class="error-msg">كلمة السر غير صحيحة، حاولي تاني 💕</p>
+    </div>
+
+    <!-- شاشة الرسالة -->
+    <div id="messageScreen" class="message-screen">
+      <!-- التورتة والشمعة المتحركة -->
+      <div class="cake-container">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+        <div class="layer layer-top"><div class="icing"></div></div>
+        <div class="layer layer-middle"><div class="icing"></div></div>
+        <div class="layer layer-bottom"><div class="icing"></div></div>
+        <div class="plate"></div>
+      </div>
+
+      <p class="greeting-text">كل سنه وانتي اجمل بنت فالدنيا ي احلي غزاله</p>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('passwordInput').value;
+      const correctPassword = "reemadam101";
+
+      if (input === correctPassword) {
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('messageScreen').style.display = 'block';
+      } else {
+        document.getElementById('errorMsg').style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>
